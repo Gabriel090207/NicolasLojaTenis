@@ -1,0 +1,137 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* Imagem */
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay escuro */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 🔥 centraliza no eixo X */
+  text-align: center; /* 🔥 centraliza texto */
+}
+/* Conteúdo */
+.hero-content {
+  color: var(--color-text-light);
+  max-width: 800px; /* 🔥 limita largura (mais elegante) */
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--color-gray-medium);
+}
+
+/* Título */
+.hero-title {
+  font-size: 56px; /* 🔥 maior impacto */
+  font-weight: bold;
+  margin: var(--spacing-md) 0;
+  line-height: 1.2;
+}
+
+/* Descrição */
+.hero-description {
+  font-size: 18px;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-gray-medium);
+}
+
+
+
+
+@media (max-width: 992px) {
+  .hero {
+    height: 440px;
+  }
+
+  .hero-content {
+    max-width: 680px;
+    padding: 0 24px;
+  }
+
+  .hero-title {
+    font-size: 46px;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-overlay {
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-title {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 14px 0;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero {
+    height: 360px;
+  }
+
+  .hero-overlay {
+    padding: 0 16px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+  }
+
+  .hero-title {
+    font-size: 25px;
+    line-height: 1.1;
+    margin: 12px 0;
+  }
+
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+  }
+}

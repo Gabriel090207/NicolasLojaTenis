@@ -1,0 +1,123 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS GLOBAIS */
+:root {
+  /* Cores principais */
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-accent: #f5c518;
+
+  /* Tons de cinza */
+  --color-gray-light: #f5f5f5;
+  --color-gray-medium: #cccccc;
+  --color-gray-dark: #333333;
+
+  /* Texto */
+  --color-text-primary: #000000;
+  --color-text-secondary: #666666;
+  --color-text-light: #ffffff;
+
+  /* Botões */
+  --color-button-primary: #f5c518;
+  --color-button-hover: #e0b000;
+
+  /* Bordas */
+  --color-border: #e5e5e5;
+
+  /* Sombras */
+  --shadow-default: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Espaçamentos */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* BASE */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-gray-light);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  padding-top: 80px;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LISTAS */
+ul {
+  list-style: none;
+}
+
+/* BOTÕES */
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* INPUTS */
+input {
+  border: none;
+  outline: none;
+  font-family: inherit;
+}
+
+/* IMAGENS */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* CONTAINER PADRÃO */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* BOTÃO PADRÃO */
+.btn-primary {
+  background-color: var(--color-button-primary);
+  color: var(--color-primary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-sm);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-button-hover);
+}
+
+/* CARD PADRÃO */
+.card {
+  background-color: var(--color-secondary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-default);
+  padding: var(--spacing-md);
+}
