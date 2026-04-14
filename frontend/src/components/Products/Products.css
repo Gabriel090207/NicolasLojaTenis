@@ -339,3 +339,27 @@
     padding: 10px;
   }
 }
+
+.btn-buy {
+  margin-top: 5px;
+  width: 100%;
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 13px;
+  transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-buy:hover {
+  background-color: var(--color-button-hover);
+}

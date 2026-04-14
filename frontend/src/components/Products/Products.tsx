@@ -1,5 +1,6 @@
 import "./Products.css"
 import productImage from "../../assets/images/product-1.jpg"
+import { Link } from "react-router-dom"
 
 function Products() {
   return (
@@ -31,7 +32,9 @@ function Products() {
             </div>
 
             {/* Botão */}
-            <button className="btn-buy">Ver Detalhes</button>
+           <Link to={`/produto/${item}`} className="btn-buy">
+  Ver Detalhes
+</Link>
           </div>
         ))}
       </div>

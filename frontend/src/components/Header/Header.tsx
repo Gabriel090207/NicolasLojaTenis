@@ -1,4 +1,6 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
+
 import "./Header.css"
 import {
   FiSearch,
@@ -38,11 +40,12 @@ function Header() {
 
         {/* Menu Desktop */}
         <nav className="header-nav">
-          <a href="#">Lançamentos</a>
-          <a href="#">Masculino</a>
-          <a href="#">Feminino</a>
-          <a href="#">Promoções</a>
-          <a href="#">Rastrear Pedido</a>
+          <Link to="/">Home</Link>
+          <Link to="/lancamentos">Lançamentos</Link>
+<Link to="/masculino">Masculino</Link>
+<Link to="/feminino">Feminino</Link>
+<Link to="/promocoes">Promoções</Link>
+<Link to="/rastrear">Rastrear Pedido</Link>
         </nav>
 
         {/* Icons */}
@@ -89,12 +92,30 @@ function Header() {
 
         <div className="mobile-sidebar-content">
           <nav className="mobile-nav">
-            <a href="#" onClick={() => setMenuOpen(false)}>Lançamentos</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Masculino</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Feminino</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Promoções</a>
-            <a href="#" onClick={() => setMenuOpen(false)}>Rastrear Pedido</a>
-          </nav>
+  <Link to="/" onClick={() => setMenuOpen(false)}>
+    Home
+  </Link>
+
+  <Link to="/lancamentos" onClick={() => setMenuOpen(false)}>
+    Lançamentos
+  </Link>
+
+  <Link to="/masculino" onClick={() => setMenuOpen(false)}>
+    Masculino
+  </Link>
+
+  <Link to="/feminino" onClick={() => setMenuOpen(false)}>
+    Feminino
+  </Link>
+
+  <Link to="/promocoes" onClick={() => setMenuOpen(false)}>
+    Promoções
+  </Link>
+
+  <Link to="/rastrear" onClick={() => setMenuOpen(false)}>
+    Rastrear Pedido
+  </Link>
+</nav>
 
           <button className="mobile-login-btn">
   <FiUser />

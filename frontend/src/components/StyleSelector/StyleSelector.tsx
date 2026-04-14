@@ -1,4 +1,8 @@
 import "./StyleSelector.css"
+
+import { Link } from "react-router-dom"
+
+
 import { useState } from "react"
 import {
   FiChevronRight,
@@ -10,6 +14,9 @@ import tenis1 from "../../assets/images/product-1.jpg"
 import tenis2 from "../../assets/images/product-1.jpg"
 import tenis3 from "../../assets/images/product-1.jpg"
 import tenis4 from "../../assets/images/product-1.jpg"
+
+
+
 
 function StyleSelector() {
   const [showMore, setShowMore] = useState(false)
@@ -116,9 +123,9 @@ const prevSlide = (style: string) => {
       4.8 <span>(120 avaliações)</span>
     </div>
 
-    <button className="btn-buy">
-      Ver Detalhes
-    </button>
+   <Link to={`/produto/${i + 1}`} className="btn-buy">
+  Ver Detalhes
+</Link>
   </div>
 ))}
               </div>
