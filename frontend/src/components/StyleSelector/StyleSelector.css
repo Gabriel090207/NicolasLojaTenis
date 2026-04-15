@@ -98,10 +98,11 @@
 .style-selector .product-card h3 {
   font-size: 15px;
   font-weight: 600;
-  margin-bottom: 6px;
+
 }
 
 .style-selector .price {
+  
   font-size: 18px;
   margin-bottom: var(--spacing-xs);
   color: var(--color-primary);

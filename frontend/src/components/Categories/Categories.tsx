@@ -1,5 +1,6 @@
 import "./Categories.css"
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import { FiArrowRight } from "react-icons/fi"
 
 import adidasBanner from "../../assets/images/brands/adidas-banner.png"
@@ -73,9 +74,12 @@ function Categories() {
           <div className="brand-content container">
             <h2>{activeBrand.name}</h2>
 
-            <button className="btn-primary">
-              COMPRE JÁ <FiArrowRight />
-            </button>
+            <Link
+  to={`/marca/${activeBrand.name.toLowerCase().replace(/\s+/g, "-")}`}
+  className="btn-primary"
+>
+  COMPRE JÁ <FiArrowRight />
+</Link>
           </div>
         </div>
       </div>
